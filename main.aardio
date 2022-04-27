@@ -1,12 +1,14 @@
+
+
 import win.ui;
 /*DSG{{*/
 var winform = win.form(text="RSA非对称加密原理";right=735;bottom=631)
 winform.add(
-button={cls="button";text="随机生成密钥对";left=8;top=480;right=136;bottom=512;z=14};
-button2={cls="button";text="加密";left=136;top=480;right=264;bottom=512;z=15};
-button3={cls="button";text="解密";left=264;top=480;right=392;bottom=512;z=16};
-button4={cls="button";text="异常测试";left=392;top=480;right=520;bottom=512;z=19};
-button5={cls="button";text="打开异常日志目录";left=520;top=480;right=648;bottom=512;z=20};
+button={cls="button";text="随机生成密钥对";left=8;top=448;right=136;bottom=480;z=14};
+button2={cls="button";text="加密";left=8;top=480;right=136;bottom=512;z=15};
+button3={cls="button";text="解密";left=136;top=480;right=264;bottom=512;z=16};
+button4={cls="button";text="异常测试";left=592;top=448;right=720;bottom=480;z=19};
+button5={cls="button";text="打开异常日志目录";left=592;top=480;right=720;bottom=512;z=20};
 edit={cls="edit";left=392;top=56;right=720;bottom=144;autohscroll=false;edge=1;multiline=1;z=7};
 edit2={cls="edit";left=392;top=176;right=720;bottom=264;autohscroll=false;edge=1;multiline=1;z=9};
 edit3={cls="edit";left=16;top=58;right=344;bottom=146;autohscroll=false;edge=1;multiline=1;z=2};
@@ -146,7 +148,7 @@ winform.button3.oncommand = function(id,event){
 	       //"密文字符",  string.hex( n2s(c) ), '\n\r', 
 	       "解密 密文数值", '\r\n', tostring(c, 16), '\r\n',
 	       )
-    Logd( tostring(m == m2) );
+    //Logd( tostring(m == m2) );
 }
 
 winform.button4.oncommand = function(id,event) {

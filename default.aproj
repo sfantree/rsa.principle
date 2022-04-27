@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project ver="10" name="libgmp-dev" libEmbed="true" icon="..." ui="console" output="libgmp-dev.exe" CompanyName="单位名称" FileDescription="libgmp-dev" LegalCopyright="Copyright (C) 作者 2021" ProductName="libgmp-dev" InternalName="libgmp-dev" FileVersion="0.0.0.1" ProductVersion="0.0.0.1" publishDir="/dist/" dstrip="false">
+<project ver="10" name="rsa.principle" libEmbed="true" icon="..." ui="win" output="libgmp-dev.exe" CompanyName="单位名称" FileDescription="libgmp-dev" LegalCopyright="Copyright (C) 作者 2021" ProductName="libgmp-dev" InternalName="libgmp-dev" FileVersion="0.0.0.1" ProductVersion="0.0.0.1" publishDir="/dist/" dstrip="false" local="false" ignored="false">
 	<file name="main.aardio" path="main.aardio" comment="启动程序代码"/>
-	<folder name="资源文件" path="res" embed="true"/>
+	<folder name="资源文件" path="res" embed="true" local="false" ignored="false">
+		<file name="libgmp-10.dll" path="res\libgmp-10.dll" comment="res\libgmp-10.dll"/>
+	</folder>
 </project>
